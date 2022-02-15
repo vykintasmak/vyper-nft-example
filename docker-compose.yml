@@ -1,0 +1,8 @@
+version: '3'
+services:
+  sandbox:
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+    command: tail -f /dev/null

@@ -1,0 +1,2119 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_data",
+          "type": "bytes"
+        },
+        {
+          "indexed": false,
+          "name": "_gas",
+          "type": "uint256"
+        }
+      ],
+      "name": "Received",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_retval",
+          "type": "bytes32"
+        },
+        {
+          "name": "_reverts",
+          "type": "bool"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "gas": 22747,
+      "inputs": [
+        {
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "contracts/ERC721ReceiverMock.vy"
+  },
+  "ast": {
+    "ast_type": "Module",
+    "body": [
+      {
+        "alias": null,
+        "ast_type": "ImportFrom",
+        "col_offset": 0,
+        "end_col_offset": 37,
+        "end_lineno": 4,
+        "level": 0,
+        "lineno": 4,
+        "module": "interfaces",
+        "name": "ERC721Receiver",
+        "node_id": 1,
+        "src": "65:37:0"
+      },
+      {
+        "annotation": {
+          "ast_type": "Name",
+          "col_offset": 12,
+          "end_col_offset": 26,
+          "end_lineno": 6,
+          "id": "ERC721Receiver",
+          "lineno": 6,
+          "node_id": 6,
+          "src": "116:14:0"
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 26,
+        "end_lineno": 6,
+        "lineno": 6,
+        "node_id": 3,
+        "simple": 1,
+        "src": "104:26:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 10,
+          "end_lineno": 6,
+          "id": "implements",
+          "lineno": 6,
+          "node_id": 4,
+          "src": "104:10:0"
+        },
+        "value": null
+      },
+      {
+        "ast_type": "EventDef",
+        "body": [
+          {
+            "annotation": {
+              "args": [
+                {
+                  "ast_type": "Name",
+                  "col_offset": 23,
+                  "end_col_offset": 30,
+                  "end_lineno": 10,
+                  "id": "address",
+                  "lineno": 10,
+                  "node_id": 15,
+                  "src": "172:7:0"
+                }
+              ],
+              "ast_type": "Call",
+              "col_offset": 15,
+              "end_col_offset": 31,
+              "end_lineno": 10,
+              "func": {
+                "ast_type": "Name",
+                "col_offset": 15,
+                "end_col_offset": 22,
+                "end_lineno": 10,
+                "id": "indexed",
+                "lineno": 10,
+                "node_id": 13,
+                "src": "164:7:0"
+              },
+              "keyword": null,
+              "keywords": [],
+              "lineno": 10,
+              "node_id": 12,
+              "src": "164:16:0"
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 31,
+            "end_lineno": 10,
+            "lineno": 10,
+            "node_id": 9,
+            "simple": 1,
+            "src": "153:27:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 13,
+              "end_lineno": 10,
+              "id": "_operator",
+              "lineno": 10,
+              "node_id": 10,
+              "src": "153:9:0"
+            },
+            "value": null
+          },
+          {
+            "annotation": {
+              "args": [
+                {
+                  "ast_type": "Name",
+                  "col_offset": 19,
+                  "end_col_offset": 26,
+                  "end_lineno": 11,
+                  "id": "address",
+                  "lineno": 11,
+                  "node_id": 23,
+                  "src": "200:7:0"
+                }
+              ],
+              "ast_type": "Call",
+              "col_offset": 11,
+              "end_col_offset": 27,
+              "end_lineno": 11,
+              "func": {
+                "ast_type": "Name",
+                "col_offset": 11,
+                "end_col_offset": 18,
+                "end_lineno": 11,
+                "id": "indexed",
+                "lineno": 11,
+                "node_id": 21,
+                "src": "192:7:0"
+              },
+              "keyword": null,
+              "keywords": [],
+              "lineno": 11,
+              "node_id": 20,
+              "src": "192:16:0"
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 27,
+            "end_lineno": 11,
+            "lineno": 11,
+            "node_id": 17,
+            "simple": 1,
+            "src": "185:23:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 9,
+              "end_lineno": 11,
+              "id": "_from",
+              "lineno": 11,
+              "node_id": 18,
+              "src": "185:5:0"
+            },
+            "value": null
+          },
+          {
+            "annotation": {
+              "ast_type": "Name",
+              "col_offset": 14,
+              "end_col_offset": 21,
+              "end_lineno": 12,
+              "id": "uint256",
+              "lineno": 12,
+              "node_id": 28,
+              "src": "223:7:0"
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 21,
+            "end_lineno": 12,
+            "lineno": 12,
+            "node_id": 25,
+            "simple": 1,
+            "src": "213:17:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 12,
+              "end_lineno": 12,
+              "id": "_tokenId",
+              "lineno": 12,
+              "node_id": 26,
+              "src": "213:8:0"
+            },
+            "value": null
+          },
+          {
+            "annotation": {
+              "ast_type": "Subscript",
+              "col_offset": 11,
+              "end_col_offset": 22,
+              "end_lineno": 13,
+              "lineno": 13,
+              "node_id": 33,
+              "slice": {
+                "ast_type": "Index",
+                "col_offset": 17,
+                "end_col_offset": 21,
+                "end_lineno": 13,
+                "lineno": 13,
+                "node_id": 36,
+                "src": "248:4:0",
+                "value": {
+                  "ast_type": "Int",
+                  "col_offset": 17,
+                  "end_col_offset": 21,
+                  "end_lineno": 13,
+                  "lineno": 13,
+                  "node_id": 37,
+                  "src": "248:4:0",
+                  "value": 1024
+                }
+              },
+              "src": "242:11:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 11,
+                "end_col_offset": 16,
+                "end_lineno": 13,
+                "id": "Bytes",
+                "lineno": 13,
+                "node_id": 34,
+                "src": "242:5:0"
+              }
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 22,
+            "end_lineno": 13,
+            "lineno": 13,
+            "node_id": 30,
+            "simple": 1,
+            "src": "235:18:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 9,
+              "end_lineno": 13,
+              "id": "_data",
+              "lineno": 13,
+              "node_id": 31,
+              "src": "235:5:0"
+            },
+            "value": null
+          },
+          {
+            "annotation": {
+              "ast_type": "Name",
+              "col_offset": 10,
+              "end_col_offset": 17,
+              "end_lineno": 14,
+              "id": "uint256",
+              "lineno": 14,
+              "node_id": 42,
+              "src": "264:7:0"
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 17,
+            "end_lineno": 14,
+            "lineno": 14,
+            "node_id": 39,
+            "simple": 1,
+            "src": "258:13:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 8,
+              "end_lineno": 14,
+              "id": "_gas",
+              "lineno": 14,
+              "node_id": 40,
+              "src": "258:4:0"
+            },
+            "value": null
+          }
+        ],
+        "col_offset": 0,
+        "end_col_offset": 17,
+        "end_lineno": 14,
+        "lineno": 9,
+        "name": "Received",
+        "node_id": 8,
+        "src": "133:138:0"
+      },
+      {
+        "annotation": {
+          "ast_type": "Name",
+          "col_offset": 8,
+          "end_col_offset": 15,
+          "end_lineno": 17,
+          "id": "bytes32",
+          "lineno": 17,
+          "node_id": 47,
+          "src": "282:7:0"
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 15,
+        "end_lineno": 17,
+        "lineno": 17,
+        "node_id": 44,
+        "simple": 1,
+        "src": "274:15:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 6,
+          "end_lineno": 17,
+          "id": "retval",
+          "lineno": 17,
+          "node_id": 45,
+          "src": "274:6:0"
+        },
+        "value": null
+      },
+      {
+        "annotation": {
+          "ast_type": "Name",
+          "col_offset": 9,
+          "end_col_offset": 13,
+          "end_lineno": 18,
+          "id": "bool",
+          "lineno": 18,
+          "node_id": 52,
+          "src": "299:4:0"
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 13,
+        "end_lineno": 18,
+        "lineno": 18,
+        "node_id": 49,
+        "simple": 1,
+        "src": "290:13:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 7,
+          "end_lineno": 18,
+          "id": "reverts",
+          "lineno": 18,
+          "node_id": 50,
+          "src": "290:7:0"
+        },
+        "value": null
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 22,
+                "end_col_offset": 29,
+                "end_lineno": 21,
+                "id": "bytes32",
+                "lineno": 21,
+                "node_id": 57,
+                "src": "337:7:0"
+              },
+              "arg": "_retval",
+              "ast_type": "arg",
+              "col_offset": 13,
+              "end_col_offset": 29,
+              "end_lineno": 21,
+              "lineno": 21,
+              "node_id": 56,
+              "src": "328:16:0"
+            },
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 41,
+                "end_col_offset": 45,
+                "end_lineno": 21,
+                "id": "bool",
+                "lineno": 21,
+                "node_id": 60,
+                "src": "356:4:0"
+              },
+              "arg": "_reverts",
+              "ast_type": "arg",
+              "col_offset": 31,
+              "end_col_offset": 45,
+              "end_lineno": 21,
+              "lineno": 21,
+              "node_id": 59,
+              "src": "346:14:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 13,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 45,
+          "end_lineno": 21,
+          "lineno": 21,
+          "node_id": 55,
+          "src": "328:32:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 25,
+            "end_lineno": 25,
+            "lineno": 25,
+            "node_id": 64,
+            "src": "414:21:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "retval",
+              "col_offset": 4,
+              "end_col_offset": 15,
+              "end_lineno": 25,
+              "lineno": 25,
+              "node_id": 65,
+              "src": "414:11:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 25,
+                "id": "self",
+                "lineno": 25,
+                "node_id": 66,
+                "src": "414:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 18,
+              "end_col_offset": 25,
+              "end_lineno": 25,
+              "id": "_retval",
+              "lineno": 25,
+              "node_id": 69,
+              "src": "428:7:0"
+            }
+          },
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 27,
+            "end_lineno": 26,
+            "lineno": 26,
+            "node_id": 71,
+            "src": "440:23:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "reverts",
+              "col_offset": 4,
+              "end_col_offset": 16,
+              "end_lineno": 26,
+              "lineno": 26,
+              "node_id": 72,
+              "src": "440:12:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 26,
+                "id": "self",
+                "lineno": 26,
+                "node_id": 73,
+                "src": "440:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 19,
+              "end_col_offset": 27,
+              "end_lineno": 26,
+              "id": "_reverts",
+              "lineno": 26,
+              "node_id": 76,
+              "src": "455:8:0"
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 20,
+            "id": "external",
+            "lineno": 20,
+            "node_id": 78,
+            "src": "306:8:0"
+          }
+        ],
+        "doc_string": {
+          "ast_type": "DocStr",
+          "col_offset": 4,
+          "end_col_offset": 7,
+          "end_lineno": 24,
+          "lineno": 22,
+          "node_id": 80,
+          "src": "367:42:0",
+          "value": "\n    @dev Contract constructor.\n    "
+        },
+        "end_col_offset": 27,
+        "end_lineno": 26,
+        "lineno": 21,
+        "name": "__init__",
+        "node_id": 54,
+        "pos": null,
+        "returns": null,
+        "src": "315:148:0"
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 32,
+                "end_col_offset": 39,
+                "end_lineno": 29,
+                "id": "address",
+                "lineno": 29,
+                "node_id": 84,
+                "src": "507:7:0"
+              },
+              "arg": "_operator",
+              "ast_type": "arg",
+              "col_offset": 21,
+              "end_col_offset": 39,
+              "end_lineno": 29,
+              "lineno": 29,
+              "node_id": 83,
+              "src": "496:18:0"
+            },
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 48,
+                "end_col_offset": 55,
+                "end_lineno": 29,
+                "id": "address",
+                "lineno": 29,
+                "node_id": 87,
+                "src": "523:7:0"
+              },
+              "arg": "_from",
+              "ast_type": "arg",
+              "col_offset": 41,
+              "end_col_offset": 55,
+              "end_lineno": 29,
+              "lineno": 29,
+              "node_id": 86,
+              "src": "516:14:0"
+            },
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 67,
+                "end_col_offset": 74,
+                "end_lineno": 29,
+                "id": "uint256",
+                "lineno": 29,
+                "node_id": 90,
+                "src": "542:7:0"
+              },
+              "arg": "_tokenId",
+              "ast_type": "arg",
+              "col_offset": 57,
+              "end_col_offset": 74,
+              "end_lineno": 29,
+              "lineno": 29,
+              "node_id": 89,
+              "src": "532:17:0"
+            },
+            {
+              "annotation": {
+                "ast_type": "Subscript",
+                "col_offset": 83,
+                "end_col_offset": 94,
+                "end_lineno": 29,
+                "lineno": 29,
+                "node_id": 93,
+                "slice": {
+                  "ast_type": "Index",
+                  "col_offset": 89,
+                  "end_col_offset": 93,
+                  "end_lineno": 29,
+                  "lineno": 29,
+                  "node_id": 96,
+                  "src": "564:4:0",
+                  "value": {
+                    "ast_type": "Int",
+                    "col_offset": 89,
+                    "end_col_offset": 93,
+                    "end_lineno": 29,
+                    "lineno": 29,
+                    "node_id": 97,
+                    "src": "564:4:0",
+                    "value": 1024
+                  }
+                },
+                "src": "558:11:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 83,
+                  "end_col_offset": 88,
+                  "end_lineno": 29,
+                  "id": "Bytes",
+                  "lineno": 29,
+                  "node_id": 94,
+                  "src": "558:5:0"
+                }
+              },
+              "arg": "_data",
+              "ast_type": "arg",
+              "col_offset": 76,
+              "end_col_offset": 94,
+              "end_lineno": 29,
+              "lineno": 29,
+              "node_id": 92,
+              "src": "551:18:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 21,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 94,
+          "end_lineno": 29,
+          "lineno": 29,
+          "node_id": 82,
+          "src": "496:73:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assert",
+            "col_offset": 4,
+            "end_col_offset": 32,
+            "end_lineno": 30,
+            "lineno": 30,
+            "msg": null,
+            "node_id": 99,
+            "src": "587:28:0",
+            "test": {
+              "ast_type": "Compare",
+              "col_offset": 11,
+              "end_col_offset": 32,
+              "end_lineno": 30,
+              "left": {
+                "ast_type": "Attribute",
+                "attr": "reverts",
+                "col_offset": 11,
+                "end_col_offset": 23,
+                "end_lineno": 30,
+                "lineno": 30,
+                "node_id": 101,
+                "src": "594:12:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 11,
+                  "end_col_offset": 15,
+                  "end_lineno": 30,
+                  "id": "self",
+                  "lineno": 30,
+                  "node_id": 102,
+                  "src": "594:4:0"
+                }
+              },
+              "lineno": 30,
+              "node_id": 100,
+              "op": {
+                "ast_type": "Eq",
+                "col_offset": 11,
+                "end_col_offset": 32,
+                "end_lineno": 30,
+                "lineno": 30,
+                "node_id": 105,
+                "src": "594:21:0"
+              },
+              "right": {
+                "ast_type": "NameConstant",
+                "col_offset": 27,
+                "end_col_offset": 32,
+                "end_lineno": 30,
+                "lineno": 30,
+                "node_id": 106,
+                "src": "610:5:0",
+                "value": false
+              },
+              "src": "594:21:0"
+            }
+          },
+          {
+            "annotation": {
+              "ast_type": "Name",
+              "col_offset": 13,
+              "end_col_offset": 20,
+              "end_lineno": 32,
+              "id": "uint256",
+              "lineno": 32,
+              "node_id": 110,
+              "src": "630:7:0"
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 24,
+            "end_lineno": 32,
+            "lineno": 32,
+            "node_id": 107,
+            "simple": 1,
+            "src": "621:20:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 11,
+              "end_lineno": 32,
+              "id": "someInt",
+              "lineno": 32,
+              "node_id": 108,
+              "src": "621:7:0"
+            },
+            "value": {
+              "ast_type": "Int",
+              "col_offset": 23,
+              "end_col_offset": 24,
+              "end_lineno": 32,
+              "lineno": 32,
+              "node_id": 112,
+              "src": "640:1:0",
+              "value": 2
+            }
+          },
+          {
+            "ast_type": "Log",
+            "col_offset": 4,
+            "end_col_offset": 60,
+            "end_lineno": 33,
+            "lineno": 33,
+            "node_id": 114,
+            "src": "646:56:0",
+            "value": {
+              "args": [
+                {
+                  "ast_type": "Name",
+                  "col_offset": 17,
+                  "end_col_offset": 26,
+                  "end_lineno": 33,
+                  "id": "_operator",
+                  "lineno": 33,
+                  "node_id": 118,
+                  "src": "659:9:0"
+                },
+                {
+                  "ast_type": "Name",
+                  "col_offset": 28,
+                  "end_col_offset": 33,
+                  "end_lineno": 33,
+                  "id": "_from",
+                  "lineno": 33,
+                  "node_id": 120,
+                  "src": "670:5:0"
+                },
+                {
+                  "ast_type": "Name",
+                  "col_offset": 35,
+                  "end_col_offset": 43,
+                  "end_lineno": 33,
+                  "id": "_tokenId",
+                  "lineno": 33,
+                  "node_id": 122,
+                  "src": "677:8:0"
+                },
+                {
+                  "ast_type": "Name",
+                  "col_offset": 45,
+                  "end_col_offset": 50,
+                  "end_lineno": 33,
+                  "id": "_data",
+                  "lineno": 33,
+                  "node_id": 124,
+                  "src": "687:5:0"
+                },
+                {
+                  "ast_type": "Attribute",
+                  "attr": "gas",
+                  "col_offset": 52,
+                  "end_col_offset": 59,
+                  "end_lineno": 33,
+                  "lineno": 33,
+                  "node_id": 126,
+                  "src": "694:7:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 52,
+                    "end_col_offset": 55,
+                    "end_lineno": 33,
+                    "id": "msg",
+                    "lineno": 33,
+                    "node_id": 127,
+                    "src": "694:3:0"
+                  }
+                }
+              ],
+              "ast_type": "Call",
+              "col_offset": 8,
+              "end_col_offset": 60,
+              "end_lineno": 33,
+              "func": {
+                "ast_type": "Name",
+                "col_offset": 8,
+                "end_col_offset": 16,
+                "end_lineno": 33,
+                "id": "Received",
+                "lineno": 33,
+                "node_id": 116,
+                "src": "650:8:0"
+              },
+              "keyword": null,
+              "keywords": [],
+              "lineno": 33,
+              "node_id": 115,
+              "src": "650:52:0"
+            }
+          },
+          {
+            "ast_type": "Return",
+            "col_offset": 4,
+            "end_col_offset": 22,
+            "end_lineno": 35,
+            "lineno": 35,
+            "node_id": 130,
+            "src": "708:18:0",
+            "value": {
+              "ast_type": "Attribute",
+              "attr": "retval",
+              "col_offset": 11,
+              "end_col_offset": 22,
+              "end_lineno": 35,
+              "lineno": 35,
+              "node_id": 131,
+              "src": "715:11:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 11,
+                "end_col_offset": 15,
+                "end_lineno": 35,
+                "id": "self",
+                "lineno": 35,
+                "node_id": 132,
+                "src": "715:4:0"
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 28,
+            "id": "external",
+            "lineno": 28,
+            "node_id": 135,
+            "src": "466:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 22,
+        "end_lineno": 35,
+        "lineno": 29,
+        "name": "onERC721Received",
+        "node_id": 81,
+        "pos": null,
+        "returns": {
+          "ast_type": "Name",
+          "col_offset": 99,
+          "end_col_offset": 106,
+          "end_lineno": 29,
+          "id": "bytes32",
+          "lineno": 29,
+          "node_id": 137,
+          "src": "574:7:0"
+        },
+        "src": "475:251:0"
+      }
+    ],
+    "col_offset": 0,
+    "doc_string": null,
+    "end_col_offset": 22,
+    "end_lineno": 35,
+    "lineno": 1,
+    "name": "contracts/ERC721ReceiverMock.vy",
+    "node_id": 0,
+    "src": "0:726:0"
+  },
+  "bytecode": "0x60206020610177016080396080518060011c6101725760e052602061017760803960805160005560e05160015561015a56600436101561000d5761011e565b60046000601c37600051346101245763150b7a02811861011c576004358060a01c6101245760e0526024358060a01c610124576101005260643560040161040081351161012457808035602001808261012037505050600154610124576002610540526101005160e0517f28fa6e16458f9c24aa59ddd4085264573006dbe30304837873c7deafc702b03861056080606060443582526020820191508082528083018061012080516020018083828460045afa905050508051806020830101818260206001820306601f8201039050033682375050805160200160206001820306601f820103905090509050810190506020820191505a825290509050610560a3600054610560526020610560f35b505b60006000fd5b600080fd5b61003161015a0361003160003961003161015a036000f35b600080fd",
+  "bytecodeSha1": "53b599ec4391ef7306f87e488c18be849355f56c",
+  "compiler": {
+    "evm_version": "istanbul",
+    "version": "0.3.1"
+  },
+  "contractName": "ERC721ReceiverMock",
+  "coverageMap": {
+    "branches": {
+      "0": {}
+    },
+    "statements": {
+      "0": {
+        "ERC721ReceiverMock.onERC721Received": {
+          "0": [
+            587,
+            615
+          ],
+          "1": [
+            621,
+            641
+          ],
+          "2": [
+            646,
+            702
+          ],
+          "3": [
+            708,
+            726
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "ERC721Receiver"
+  ],
+  "deployedBytecode": "0x600436101561000d5761011e565b60046000601c37600051346101245763150b7a02811861011c576004358060a01c6101245760e0526024358060a01c610124576101005260643560040161040081351161012457808035602001808261012037505050600154610124576002610540526101005160e0517f28fa6e16458f9c24aa59ddd4085264573006dbe30304837873c7deafc702b03861056080606060443582526020820191508082528083018061012080516020018083828460045afa905050508051806020830101818260206001820306601f8201039050033682375050805160200160206001820306601f820103905090509050810190506020820191505a825290509050610560a3600054610560526020610560f35b505b60006000fd5b600080fd",
+  "deployedSourceMap": "-1:-1:0:-;;;;;:::-;;:::-;:::-;;;;;;;;;:::-;475:251;;;;:::-;-1:-1;;;;;;:::-;;475:251;-1:-1;;;;;;:::-;;475:251;-1:-1;;;;;;;;;:::-;;;;;;;;;;;;475:251;594:12;:21;587:28;:::-;640:1;621:20;475:251;670:5;646:56;659:9;646:56;;;;;677:8;-1:-1;;646:56;;;;;;;;;;;;;687:5;-1:-1;;;;;;;;;;;;;646:56;;-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;646:56;;;;;-1:-1;;;;;;;;;;;646:56;;;;;;;;;;;;;694:7;-1:-1;646:56;;;;;;;715:11;-1:-1;708:18;-1:-1;708:18;;475:251;:::-;-1:-1;:::-;;;;:::-;;;;",
+  "language": "Vyper",
+  "natspec": {
+    "methods": {
+      "__init__(bytes32,bool)": {
+        "details": "Contract constructor."
+      }
+    }
+  },
+  "offset": [
+    0,
+    732
+  ],
+  "opcodes": "PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH2 0x0D JUMPI PUSH2 0x11E JUMP JUMPDEST PUSH1 0x4 PUSH1 0x0 PUSH1 0x1C CALLDATACOPY PUSH1 0x0 MLOAD CALLVALUE PUSH2 0x124 JUMPI PUSH4 0x15B7A2 DUP2 XOR PUSH2 0x11C JUMPI PUSH1 0x4 CALLDATALOAD DUP1 PUSH1 0xA0 SHR PUSH2 0x124 JUMPI PUSH1 0xE0 MSTORE PUSH1 0x24 CALLDATALOAD DUP1 PUSH1 0xA0 SHR PUSH2 0x124 JUMPI PUSH2 0x10 MSTORE PUSH1 0x64 CALLDATALOAD PUSH1 0x4 ADD PUSH2 0x40 DUP2 CALLDATALOAD GT PUSH2 0x124 JUMPI DUP1 DUP1 CALLDATALOAD PUSH1 0x20 ADD DUP1 DUP3 PUSH2 0x120 CALLDATACOPY POP POP POP PUSH1 0x1 SLOAD PUSH2 0x124 JUMPI PUSH1 0x2 PUSH2 0x540 MSTORE PUSH2 0x10 MLOAD PUSH1 0xE0 MLOAD PUSH32 0x28FA6E16458F9C24AA59DDD48526457306DBE334837873C7DEAFC72B038 PUSH2 0x560 DUP1 PUSH1 0x60 PUSH1 0x44 CALLDATALOAD DUP3 MSTORE PUSH1 0x20 DUP3 ADD SWAP2 POP DUP1 DUP3 MSTORE DUP1 DUP4 ADD DUP1 PUSH2 0x120 DUP1 MLOAD PUSH1 0x20 ADD DUP1 DUP4 DUP3 DUP5 PUSH1 0x4 GAS STATICCALL SWAP1 POP POP POP DUP1 MLOAD DUP1 PUSH1 0x20 DUP4 ADD ADD DUP2 DUP3 PUSH1 0x20 PUSH1 0x1 DUP3 SUB MOD PUSH1 0x1F DUP3 ADD SUB SWAP1 POP SUB CALLDATASIZE DUP3 CALLDATACOPY POP POP DUP1 MLOAD PUSH1 0x20 ADD PUSH1 0x20 PUSH1 0x1 DUP3 SUB MOD PUSH1 0x1F DUP3 ADD SUB SWAP1 POP SWAP1 POP SWAP1 POP DUP2 ADD SWAP1 POP PUSH1 0x20 DUP3 ADD SWAP2 POP GAS DUP3 MSTORE SWAP1 POP SWAP1 POP PUSH2 0x560 LOG3 PUSH1 0x0 SLOAD PUSH2 0x560 MSTORE PUSH1 0x20 PUSH2 0x560 RETURN JUMPDEST POP JUMPDEST PUSH1 0x0 PUSH1 0x0 REVERT JUMPDEST PUSH1 0x0 DUP1 REVERT",
+  "pcMap": {
+    "0": {
+      "offset": [
+        0,
+        726
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "2": {
+      "op": "CALLDATASIZE"
+    },
+    "3": {
+      "op": "LT"
+    },
+    "4": {
+      "op": "ISZERO"
+    },
+    "5": {
+      "op": "PUSH2",
+      "value": "0x0D"
+    },
+    "8": {
+      "op": "JUMPI"
+    },
+    "9": {
+      "op": "PUSH2",
+      "value": "0x11E"
+    },
+    "12": {
+      "op": "JUMP"
+    },
+    "13": {
+      "op": "JUMPDEST"
+    },
+    "14": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "16": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "18": {
+      "op": "PUSH1",
+      "value": "0x1C"
+    },
+    "20": {
+      "op": "CALLDATACOPY"
+    },
+    "21": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "23": {
+      "op": "MLOAD"
+    },
+    "24": {
+      "op": "CALLVALUE"
+    },
+    "25": {
+      "op": "PUSH2",
+      "value": "0x124"
+    },
+    "28": {
+      "dev": "Cannot send ether to nonpayable function",
+      "offset": [
+        0,
+        0
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "29": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x15B7A2"
+    },
+    "34": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "35": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "XOR",
+      "path": "0"
+    },
+    "36": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x11C"
+    },
+    "39": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "40": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "42": {
+      "op": "CALLDATALOAD"
+    },
+    "43": {
+      "op": "DUP1"
+    },
+    "44": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "46": {
+      "op": "SHR"
+    },
+    "47": {
+      "op": "PUSH2",
+      "value": "0x124"
+    },
+    "50": {
+      "op": "JUMPI"
+    },
+    "51": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "53": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "54": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "56": {
+      "op": "CALLDATALOAD"
+    },
+    "57": {
+      "op": "DUP1"
+    },
+    "58": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "60": {
+      "op": "SHR"
+    },
+    "61": {
+      "op": "PUSH2",
+      "value": "0x124"
+    },
+    "64": {
+      "op": "JUMPI"
+    },
+    "65": {
+      "op": "PUSH2",
+      "value": "0x10"
+    },
+    "68": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "69": {
+      "op": "PUSH1",
+      "value": "0x64"
+    },
+    "71": {
+      "op": "CALLDATALOAD"
+    },
+    "72": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "74": {
+      "op": "ADD"
+    },
+    "75": {
+      "op": "PUSH2",
+      "value": "0x40"
+    },
+    "78": {
+      "op": "DUP2"
+    },
+    "79": {
+      "op": "CALLDATALOAD"
+    },
+    "80": {
+      "op": "GT"
+    },
+    "81": {
+      "op": "PUSH2",
+      "value": "0x124"
+    },
+    "84": {
+      "op": "JUMPI"
+    },
+    "85": {
+      "op": "DUP1"
+    },
+    "86": {
+      "op": "DUP1"
+    },
+    "87": {
+      "op": "CALLDATALOAD"
+    },
+    "88": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "90": {
+      "op": "ADD"
+    },
+    "91": {
+      "op": "DUP1"
+    },
+    "92": {
+      "op": "DUP3"
+    },
+    "93": {
+      "op": "PUSH2",
+      "value": "0x120"
+    },
+    "96": {
+      "op": "CALLDATACOPY"
+    },
+    "97": {
+      "op": "POP"
+    },
+    "98": {
+      "op": "POP"
+    },
+    "99": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "100": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        594,
+        606
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 0,
+      "value": "0x1"
+    },
+    "102": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        594,
+        615
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "103": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        587,
+        615
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x124"
+    },
+    "106": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        587,
+        615
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "107": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        640,
+        641
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 1,
+      "value": "0x2"
+    },
+    "109": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        621,
+        641
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x540"
+    },
+    "112": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "113": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        670,
+        675
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "statement": 2,
+      "value": "0x10"
+    },
+    "116": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "117": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        659,
+        668
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xE0"
+    },
+    "119": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "120": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "PUSH32",
+      "path": "0",
+      "value": "0x28FA6E16458F9C24AA59DDD48526457306DBE334837873C7DEAFC72B038"
+    },
+    "153": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x560"
+    },
+    "156": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "157": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x60"
+    },
+    "159": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        677,
+        685
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x44"
+    },
+    "161": {
+      "op": "CALLDATALOAD"
+    },
+    "162": {
+      "op": "DUP3"
+    },
+    "163": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "164": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "166": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "167": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "168": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "169": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "170": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "171": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "172": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "173": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "174": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "175": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "176": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "177": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        687,
+        692
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "180": {
+      "op": "DUP1"
+    },
+    "181": {
+      "op": "MLOAD"
+    },
+    "182": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "184": {
+      "op": "ADD"
+    },
+    "185": {
+      "op": "DUP1"
+    },
+    "186": {
+      "op": "DUP4"
+    },
+    "187": {
+      "op": "DUP3"
+    },
+    "188": {
+      "op": "DUP5"
+    },
+    "189": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "191": {
+      "op": "GAS"
+    },
+    "192": {
+      "op": "STATICCALL"
+    },
+    "193": {
+      "op": "SWAP1"
+    },
+    "194": {
+      "op": "POP"
+    },
+    "195": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "196": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "197": {
+      "op": "DUP1"
+    },
+    "198": {
+      "op": "MLOAD"
+    },
+    "199": {
+      "op": "DUP1"
+    },
+    "200": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "202": {
+      "op": "DUP4"
+    },
+    "203": {
+      "op": "ADD"
+    },
+    "204": {
+      "op": "ADD"
+    },
+    "205": {
+      "op": "DUP2"
+    },
+    "206": {
+      "op": "DUP3"
+    },
+    "207": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "209": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "211": {
+      "op": "DUP3"
+    },
+    "212": {
+      "op": "SUB"
+    },
+    "213": {
+      "op": "MOD"
+    },
+    "214": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "216": {
+      "op": "DUP3"
+    },
+    "217": {
+      "op": "ADD"
+    },
+    "218": {
+      "op": "SUB"
+    },
+    "219": {
+      "op": "SWAP1"
+    },
+    "220": {
+      "op": "POP"
+    },
+    "221": {
+      "op": "SUB"
+    },
+    "222": {
+      "op": "CALLDATASIZE"
+    },
+    "223": {
+      "op": "DUP3"
+    },
+    "224": {
+      "op": "CALLDATACOPY"
+    },
+    "225": {
+      "op": "POP"
+    },
+    "226": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "227": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "228": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "229": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "231": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "232": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "234": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "236": {
+      "op": "DUP3"
+    },
+    "237": {
+      "op": "SUB"
+    },
+    "238": {
+      "op": "MOD"
+    },
+    "239": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "241": {
+      "op": "DUP3"
+    },
+    "242": {
+      "op": "ADD"
+    },
+    "243": {
+      "op": "SUB"
+    },
+    "244": {
+      "op": "SWAP1"
+    },
+    "245": {
+      "op": "POP"
+    },
+    "246": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "247": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "248": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "249": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "250": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "251": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "252": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "253": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "254": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "256": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "257": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "258": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "259": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "260": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        694,
+        701
+      ],
+      "op": "GAS",
+      "path": "0"
+    },
+    "261": {
+      "op": "DUP3"
+    },
+    "262": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "263": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "264": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "265": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "266": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "267": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x560"
+    },
+    "270": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        646,
+        702
+      ],
+      "op": "LOG3",
+      "path": "0"
+    },
+    "271": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        715,
+        726
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 3,
+      "value": "0x0"
+    },
+    "273": {
+      "op": "SLOAD"
+    },
+    "274": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        708,
+        726
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x560"
+    },
+    "277": {
+      "op": "MSTORE"
+    },
+    "278": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        708,
+        726
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "280": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        708,
+        726
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x560"
+    },
+    "283": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "RETURN",
+      "path": "0"
+    },
+    "284": {
+      "fn": "ERC721ReceiverMock.onERC721Received",
+      "offset": [
+        475,
+        726
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "285": {
+      "op": "POP"
+    },
+    "286": {
+      "op": "JUMPDEST"
+    },
+    "287": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "289": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "291": {
+      "op": "REVERT"
+    },
+    "292": {
+      "op": "JUMPDEST"
+    },
+    "293": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "295": {
+      "op": "DUP1"
+    },
+    "296": {
+      "op": "REVERT",
+      "optimizer_revert": true
+    }
+  },
+  "sha1": "c2d425f9472e09e2ef43bb785212807174bdebc0",
+  "source": "# @version 0.3.1\n# @dev Implementation of ERC-721Receiver mock.\n\nfrom interfaces import ERC721Receiver\n\nimplements: ERC721Receiver\n\n\nevent Received:\n    _operator: indexed(address)\n    _from: indexed(address)\n    _tokenId: uint256\n    _data: Bytes[1024]\n    _gas: uint256\n\n\nretval: bytes32\nreverts: bool\n\n@external\ndef __init__(_retval: bytes32, _reverts: bool):\n    \"\"\"\n    @dev Contract constructor.\n    \"\"\"\n    self.retval = _retval\n    self.reverts = _reverts\n\n@external\ndef onERC721Received(_operator: address, _from: address, _tokenId: uint256, _data: Bytes[1024]) -> bytes32:\n    assert self.reverts == False\n\n    someInt: uint256 = 2\n    log Received(_operator, _from, _tokenId, _data, msg.gas)\n\n    return self.retval\n    \n",
+  "sourceMap": "",
+  "sourcePath": "contracts/ERC721ReceiverMock.vy",
+  "type": "contract"
+}
