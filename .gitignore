@@ -1,3 +1,6 @@
 
 # ignore all files in any directory named build
 deployments/
+
+# ignore all DS_store files
+**/.DS_Store
