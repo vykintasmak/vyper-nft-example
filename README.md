@@ -1,8 +1,8 @@
-# OpenSea compatible NFT contract example using Vyper
+# OpenSea compatible ERC721 (NFT) contract using Vyper
 ## Safety
 This is experimental software that wasn't audited. Use it at your own risk.
 ## Environment
-In order for errors or bugs to be reproducible on any environment, this example uses Docker. Please install `docker` and `docker-compose` before the start.
+In order for errors or bugs to be reproducible on any environment, this example uses [Docker](https://docs.docker.com/get-docker/). Please install `docker` and `docker-compose` before the start.
 
 Also if you are looking to deploy your contract to non-local testnet or mainnet, you'll need Infura Project ID. You can find a tutorial of how to obtain one [here](https://blog.infura.io/getting-started-with-infura-28e41844cc89/). Once you have one set it as environment variable:
 ```Bash
@@ -66,4 +66,4 @@ docker-compose exec sandbox bash -c 'brownie run interact.py [functionName] [con
 ```
 Here `functionName` corresponds to the same function name as in the contract, for example `balanceOf`. `contract-address` is the address of previously deployed contract. `your-account-id` is the brownie account you are using to interact with the blockchain. `additional-variables` can be one or more variables that are required for function execution, for example `balanceOf(_owner: address)` requires you to provide the address of the wallet.
 ### Acknowledgements
-The ERC721_OpenSea contract code was originally written by: Ryuya Nakamura (@nrryuya), Thiwakon Mezenen (@ThiwakonPB) and Anutorn Ravisitikiat(BeatMil).
+The ERC721_OpenSea.vy contract code was originally written by: Ryuya Nakamura (@nrryuya), Thiwakon Mezenen (@ThiwakonPB) and Anutorn Ravisitikiat(BeatMil).
