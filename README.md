@@ -25,7 +25,7 @@ self.name = "Another Lootbox"
 self.symbol = "LOOTBOX"
 self.baseURI = "https://opensea-creatures-api.herokuapp.com/api/creature/"
 ```
-Name will be used as the OpenSea Collection name. URI is for accessing metadata of each individual NFTs.
+`name` will be used as the OpenSea Collection name. `baseURI` is for accessing metadata of each individual NFTs.
 ### Usage
 This example uses [brownie](https://github.com/eth-brownie/brownie) for smart contract development and testing. In order to interact with smart contracts we use brownie CLI:
 #### Test
@@ -35,7 +35,7 @@ docker-compose exec sandbox bash -c 'brownie test --network development'
 ```
 #### Wallet setup
 To deploy to either a test or main network you'll need a wallet and some ether on that network. 
-To create new wallet for this specific purpose run:
+Create new wallet for this specific purpose run:
 ```Bash
 docker-compose exec sandbox bash -c 'brownie accounts generate [your-account-id]'
 ```
@@ -52,7 +52,7 @@ Once you have enough Eth you can deploy your contract to testnet using a command
 docker-compose exec sandbox bash -c 'brownie run deploy.py [your-account-id] --network rinkeby'
 ```
 #### Mint
-And mint your first NFT:
+Command to mint your first NFT:
 ```Bash
 docker-compose exec sandbox bash -c 'brownie run interact.py mint [contract-address] [your-account-id] [your-account-address] --network rinkeby'
 ```
@@ -67,3 +67,5 @@ docker-compose exec sandbox bash -c 'brownie run interact.py [functionName] [con
 Here `functionName` corresponds to the same function name as in the contract, for example `balanceOf`. `contract-address` is the address of previously deployed contract. `your-account-id` is the brownie account you are using to interact with the blockchain. `additional-variables` can be one or more variables that are required for function execution, for example `balanceOf(_owner: address)` requires you to provide the address of the wallet.
 ### Acknowledgements
 The ERC721_OpenSea.vy contract code was originally written by: Ryuya Nakamura (@nrryuya), Thiwakon Mezenen (@ThiwakonPB) and Anutorn Ravisitikiat(BeatMil).
+
+Ping me on [Twitter](https://twitter.com/@vykintasm) if you have any suggestions or issues.
