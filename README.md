@@ -39,7 +39,7 @@ To create new wallet for this specific purpose run:
 ```Bash
 docker-compose exec sandbox bash -c 'brownie accounts generate [your-account-id]'
 ```
-Please note that `your-account-id` will be needed for each interaction with the contract. You can also load and existing account using a private key using this command:
+Please note that `your-account-id` will be needed for each interaction with the contract. You can also load an existing account using a private key using this command:
 ```Bash
 docker-compose exec sandbox bash -c 'brownie accounts new your-account-id'
 ```
