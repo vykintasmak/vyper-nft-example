@@ -37,7 +37,7 @@ docker-compose exec sandbox bash -c 'brownie test --network development'
 To deploy to either a test or main network you'll need a wallet and some ether on that network. 
 To create new wallet for this specific purpose run:
 ```Bash
-docker-compose exec sandbox bash -c 'brownie accounts generate your-account-id'
+docker-compose exec sandbox bash -c 'brownie accounts generate [your-account-id]'
 ```
 Please note that `your-account-id` will be needed for each interaction with the contract. You can also load and existing account using a private key using this command:
 ```Bash
@@ -49,12 +49,12 @@ OpenSea uses Rinkeby testnet so we recommend testing your NFTs on this net as we
 #### Deploy
 Once you have enough Eth you can deploy your contract to testnet using a command:
 ```Bash
-docker-compose exec sandbox bash -c 'brownie run deploy.py your-account-id --network rinkeby'
+docker-compose exec sandbox bash -c 'brownie run deploy.py [your-account-id] --network rinkeby'
 ```
 #### Mint
 And mint your first NFT:
 ```Bash
-docker-compose exec sandbox bash -c 'brownie run interact.py mint contract-address your-account-id your-account-address --network rinkeby'
+docker-compose exec sandbox bash -c 'brownie run interact.py mint [contract-address] [your-account-id] [your-account-address] --network rinkeby'
 ```
 In the command above `contract-address` should be replaced with the address of deployed contract, `your-account-id` with the ID you created previously and `your-account-address` is the ethereum address that should get the minted NFT.
 
