@@ -1,4 +1,5 @@
 # Interface for the contract called by safeTransferFrom()
+# @dev Note: the ERC-165 identifier for this interface is 0x150b7a02.
 
 # Events
 

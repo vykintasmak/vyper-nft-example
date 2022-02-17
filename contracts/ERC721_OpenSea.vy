@@ -103,7 +103,7 @@ def __init__(_owner: address):
     """
     assert _owner != ZERO_ADDRESS
     self.totalSupply = 0
-    self.name = "Lootbox"
+    self.name = "Another Lootbox"
     self.symbol = "LOOTBOX"
     self.baseURI = "https://opensea-creatures-api.herokuapp.com/api/creature/"
     self.supportedInterfaces[ERC165_INTERFACE_ID] = True

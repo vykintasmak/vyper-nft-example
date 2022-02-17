@@ -3,6 +3,9 @@ services:
   sandbox:
     build:
       context: .
+    environment: 
+      - WEB3_INFURA_PROJECT_ID=${INFURA_ID}
+      - ETHERSCAN_TOKEN=${ETHERSCAN_TOKEN}
     volumes:
       - .:/usr/src/app
     command: tail -f /dev/null

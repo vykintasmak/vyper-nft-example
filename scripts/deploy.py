@@ -1,14 +1,9 @@
 #!/usr/bin/python3
 # scripts/deploy.py
 
-from brownie import Employment, Factory, accounts
+from brownie import ERC721_OpenSea, accounts
 
-def main():
-    acct = accounts.load('testac2')
-
-    employment = Employment.deploy({'from': acct})
-    factory = Factory.deploy({'from': acct})
-
-    factory.initializeFactory(employment, {'from': acct})
-
-    return [factory, employment]
+def main(signed_acc):
+    acc = accounts.load(signed_acc)
+    erc721_contract = ERC721_OpenSea.deploy(acc, {'from': acc})
+    return erc721_contract
