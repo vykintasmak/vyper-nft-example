@@ -25,21 +25,23 @@ docker-compose up -d
 ### Setup
 To prepare contract for deployment you will need to edit contract variables found in `contracts/ERC721_OpenSea.vy`:
 ```python
-    self.name = "Another Lootbox"
-    self.symbol = "LOOTBOX"
-    self.baseURI = "https://opensea-creatures-api.herokuapp.com/api/creature/"
+self.name = "Another Lootbox"
+self.symbol = "LOOTBOX"
+self.baseURI = "https://opensea-creatures-api.herokuapp.com/api/creature/"
 ```
 Name will be used as the OpenSea Collection name. URI is for accessing metadata of each individual NFTs.
 
 
-### Use
+### Usage
 This example uses [brownie](https://github.com/eth-brownie/brownie) for smart contract development and testing. In order to interact with smart contracts we use brownie CLI:
 
+#### Test
 In order to run tests:
 ```Bash
 docker-compose exec sandbox bash -c 'brownie test --network development'
 ```
 
+#### Wallet setup
 To deploy to either a test or main network you'll need a wallet and some ether on that network. 
 To create new wallet for this specific purpose run:
 ```Bash
@@ -54,11 +56,13 @@ Read more on Brownie account management [here](https://eth-brownie.readthedocs.i
 
 OpenSea uses Rinkeby testnet so we recommend testing your NFTs on this net as well. In order to get some Eth you'll need to request some from public faucets like [this](https://faucet.rinkeby.io/) or [that](https://faucet.paradigm.xyz/).
 
+#### Deploy
 Once you have enough Eth you can deploy your contract to testnet using a command:
 ```Bash
 docker-compose exec sandbox bash -c 'brownie run deploy.py your-account-id --network rinkeby'
 ```
 
+#### Mint
 And mint your first NFT:
 ```Bash
 docker-compose exec sandbox bash -c 'brownie run interact.py mint contract-address your-account-id your-account-address --network rinkeby'
@@ -67,7 +71,7 @@ In the command above `contract-address` should be replaced with the address of d
 
 Once it's done you can open this link: `https://testnets.opensea.io/assets/[contract-address]/1` after replacing `[contract-address]` with your contract address, to view NFT.
 
-### Interact
+### Further interactions
 To simplify interaction with the contract each external function is accessible through `interact.py`. In order to trigger some smart contract function run:
 ```Bash
 docker-compose exec sandbox bash -c 'brownie run interact.py [functionName] [contract-address] [your-account-id] [additional-variables] --network rinkeby'
