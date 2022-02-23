@@ -49,7 +49,7 @@ OpenSea uses Rinkeby testnet so we recommend testing your NFTs on this net as we
 #### Deploy
 Once you have enough Eth you can deploy your contract to testnet using a command:
 ```Bash
-docker-compose exec sandbox bash -c 'brownie run deploy.py [your-account-id] --network rinkeby'
+docker-compose exec sandbox bash -c 'brownie run deploy.py main [your-account-id] --network rinkeby'
 ```
 #### Mint
 Command to mint your first NFT:
